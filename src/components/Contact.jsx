@@ -11,12 +11,12 @@ const Contact = () => {
         {/* Social Cards */}
         <div className="social-cards">
 
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-card linkedin">
+          <a href="https://www.linkedin.com/in/rohan-modi-617b6b361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" className="social-card linkedin">
             <h3>LinkedIn</h3>
             <p>Connect professionally</p>
           </a>
 
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="social-card github">
+          <a href="" target="_blank" rel="noreferrer" className="social-card github">
             <h3>GitHub</h3>
             <p>View my projects</p>
           </a>
