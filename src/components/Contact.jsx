@@ -16,7 +16,7 @@ const Contact = () => {
             <p>Connect professionally</p>
           </a>
 
-          <a href="" target="_blank" rel="noreferrer" className="social-card github">
+          <a href="https://github.com/rohan456-hub" target="_blank" rel="noreferrer" className="social-card github">
             <h3>GitHub</h3>
             <p>View my projects</p>
           </a>
