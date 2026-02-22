@@ -1,0 +1,130 @@
+/* ===== SECTION LAYOUT ===== */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 80px 20px;
+}
+
+
+/* ===== CARD BASE ===== */
+.flip-card {
+  background-color: transparent;
+  width: 230px;
+  height: 270px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+
+/* ===== INNER ROTATION ===== */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* ===== FRONT + BACK COMMON ===== */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+
+/* ===== FRONT ===== */
+.flip-card-front {
+  background: linear-gradient(145deg,#111,#1c1c1c);
+  color: #ff7a59;
+}
+
+
+/* ===== BACK ===== */
+.flip-card-back {
+  background: linear-gradient(145deg,#1a0000,#320000);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* ===== TEXT ===== */
+.title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.flip-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+
+/* ===== HOVER EFFECT ===== */
+.flip-card:hover {
+ .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+  
+}
+
+
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+
+  .section {
+    gap: 30px;
+  }
+
+  .flip-card {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .flip-card {
+    width: 92%;
+    max-width: 320px;
+    height: 240px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .flip-card p {
+    font-size: 13px;
+  }
+}

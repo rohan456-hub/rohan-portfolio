@@ -1,0 +1,90 @@
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.3rem;
+  margin-bottom: 50px;
+  color: coral;
+}
+
+/* Layout */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+
+/* SOCIAL CARDS */
+.social-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-card {
+  width: 200px;
+  height: 140px;
+  border-radius: 1rem;
+  border: 1px solid coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: coral;
+  transition: 0.35s;
+    background: linear-gradient(145deg,#111,#1c1c1c);
+  color: #ff7a59;
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+/* INFO BOXES */
+.contact-info {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-box {
+  padding: 20px 35px;
+  border-radius: 1rem;
+  border: 1px solid coral;
+  background: linear-gradient(145deg,#111,#1c1c1c);
+  color: #ff7a59;
+  
+  color: coral;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: scale(1.05);
+}
+
+.info-box h4 {
+  margin-bottom: 5px;
+}
+
+
+/* MOBILE */
+@media(max-width:768px){
+  .social-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .info-box {
+    width: 90%;
+    text-align: center;
+  }
+}
