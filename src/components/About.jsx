@@ -18,7 +18,7 @@ const About = () => {
           <p>
             I enjoy solving real-world problems using JavaScript, React, Node.js,
             and MongoDB. My goal is to become a skilled full-stack developer
-            and work with top tech companies like <strong>Capgemini</strong>.
+            and work with top tech companies.
           </p>
 
           <div className="about-info">
